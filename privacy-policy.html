@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Arise</title>
+    <meta name="description" content="Privacy Policy for Arise — Digital Discipline & Growth Android application by Roshan Sharma.">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --surface: #111118;
+            --surface-alt: #16161f;
+            --border: #23233a;
+            --text: #e4e4ef;
+            --text-secondary: #8b8ba0;
+            --accent: #7c5cfc;
+            --accent-soft: rgba(124, 92, 252, 0.12);
+            --warning: #ffb347;
+            --success: #4ade80;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        header .app-name {
+            color: var(--accent);
+        }
+
+        header .last-updated {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        header .effective-date {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Commitment card */
+        .commitment-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 40px;
+        }
+
+        .commitment-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .commitment-point {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .commitment-point:last-child {
+            margin-bottom: 0;
+        }
+
+        .commitment-emoji {
+            font-size: 1.3rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .commitment-text strong {
+            display: block;
+            font-size: 0.95rem;
+            margin-bottom: 2px;
+        }
+
+        .commitment-text p {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        /* Section styling */
+        section {
+            margin-bottom: 36px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            color: var(--accent);
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin-bottom: 12px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+        }
+
+        li strong {
+            color: var(--text);
+        }
+
+        /* Info box */
+        .info-box {
+            background: var(--surface-alt);
+            border-left: 3px solid var(--accent);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+
+        .info-box p {
+            margin-bottom: 4px;
+            font-size: 0.9rem;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 179, 71, 0.06);
+            border-left: 3px solid var(--warning);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+
+        .warning-box p {
+            margin-bottom: 4px;
+            font-size: 0.9rem;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--surface);
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        footer p {
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px 60px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            table {
+                font-size: 0.8rem;
+            }
+
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy — <span class="app-name">Arise</span></h1>
+            <p class="last-updated">Last Updated: June 14, 2026</p>
+            <p class="effective-date">Effective Date: June 14, 2026</p>
+        </header>
+
+        <!-- ═══ Our Commitment ═══════════════════════════════════════════ -->
+        <div class="commitment-card">
+            <h2>🛡️ Our Commitment to You</h2>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">📱</span>
+                <div class="commitment-text">
+                    <strong>Your data stays on your device by default.</strong>
+                    <p>Arise works fully offline. Your habits, tasks, journal entries, and focus session data are stored locally on your device. Nothing is uploaded unless you explicitly choose to enable sync.</p>
+                </div>
+            </div>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">☁️</span>
+                <div class="commitment-text">
+                    <strong>Cloud sync is strictly opt-in.</strong>
+                    <p>If you sign in, your data syncs to your own private Firebase/Google Drive storage. Only you can access it. We cannot read your personal entries.</p>
+                </div>
+            </div>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">🚫</span>
+                <div class="commitment-text">
+                    <strong>We do not sell your data. Ever.</strong>
+                    <p>We do not sell, rent, lease, or trade your personal information to any third party for commercial purposes. Not now, not ever.</p>
+                </div>
+            </div>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">🤖</span>
+                <div class="commitment-text">
+                    <strong>AI that respects your privacy.</strong>
+                    <p>Our AI assistant "Aria" can run entirely on-device. Cloud AI is opt-in. You control what data Aria can access via granular privacy settings.</p>
+                </div>
+            </div>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">🗑️</span>
+                <div class="commitment-text">
+                    <strong>Full deletion on demand.</strong>
+                    <p>Delete your account and your app data is removed immediately after account verification. No retention games.</p>
+                </div>
+            </div>
+        </div>
+
+        <p>This Privacy Policy describes how Roshan Sharma ("Developer", "we", "us", or "our") collects, uses, discloses, and protects information when you use the Arise mobile application ("App", "Service") available on the Google Play Store. By using the App, you agree to the collection and use of information in accordance with this policy.</p>
+
+        <!-- ═══ 1. Information We Collect ═════════════════════════════════ -->
+        <section>
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Information You Provide Directly</h3>
+            <ul>
+                <li><strong>Account Information:</strong> When you create an account, we collect your email address, username, and password. Passwords are handled exclusively by Firebase Authentication — we never see, store, or have access to your raw password.</li>
+                <li><strong>Profile Information:</strong> Display name and profile picture, only if you choose to add or update them.</li>
+                <li><strong>User-Generated Content:</strong> Tasks, habits, journal entries, notes, projects, areas, resources, and focus session settings. This content is stored locally on your device by default and synced to the cloud only if you opt in.</li>
+                <li><strong>AI Chat Conversations:</strong> Messages you send to our AI assistant "Aria" are stored locally on your device. If you enable Cloud AI mode, your messages are sent to a third-party AI service for processing (see Section 5).</li>
+                <li><strong>Survey Responses:</strong> If you complete the optional in-app onboarding survey, your responses (e.g., age, life expectancy estimate, personal goals) are stored locally on your device and used solely to personalize your experience.</li>
+            </ul>
+
+            <h3>1.2 Information Collected Automatically</h3>
+            <ul>
+                <li><strong>Analytics Data:</strong> We use Firebase Analytics (Google) to collect anonymized, aggregated usage statistics such as screen views, feature usage frequency, session duration, and in-app events. This data is not linked to your personal identity and is used solely to understand how features are used and to improve the App.</li>
+                <li><strong>Crash and Performance Data:</strong> We collect anonymized crash reports and performance metrics through Firebase to diagnose and fix technical issues. This includes device type, operating system version, app version, and stack traces. This data is not linked to your personal identity.</li>
+                <li><strong>Advertising Data:</strong> We use Google AdMob to display non-personalized banner advertisements within the App. AdMob may collect device advertising identifiers and limited device information as described in Google's privacy policy. You can opt out of personalized advertising in your device's Google Settings. Ads are displayed based on in-app gamification health — users in good standing see fewer or no ads.</li>
+            </ul>
+
+            <h3>1.3 Information Accessed On-Device Only (Never Collected)</h3>
+            <div class="info-box">
+                <p>The following data is accessed and processed entirely on your device. It is <strong>never transmitted, uploaded, or accessible</strong> to us or any third party:</p>
+            </div>
+            <ul>
+                <li><strong>App Usage Statistics &amp; Foreground Detection:</strong> If you grant the Usage Access permission, Arise reads your screen time and foreground application package names to display your usage patterns and enforce focus whitelisting. This data stays exclusively on your device.</li>
+            </ul>
+        </section>
+
+        <!-- ═══ 2. What We Do NOT Collect ════════════════════════════════ -->
+        <section>
+            <h2>2. What We Do NOT Collect</h2>
+            <div class="info-box">
+                <p>✗ We do <strong>not</strong> collect your location data.</p>
+                <p>✗ We do <strong>not</strong> access your contacts, call logs, or SMS.</p>
+                <p>✗ We do <strong>not</strong> read your emails or messages.</p>
+                <p>✗ We do <strong>not</strong> track you across other apps or websites.</p>
+                <p>✗ We do <strong>not</strong> build advertising profiles from your personal data.</p>
+                <p>✗ We do <strong>not</strong> sell, rent, or trade your personal data to any third party.</p>
+                <p>✗ We do <strong>not</strong> upload your screen time or app usage data to any server.</p>
+            </div>
+        </section>
+
+        <!-- ═══ 3. How We Use Your Information ═══════════════════════════ -->
+        <section>
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the information we collect for the following purposes:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Purpose</th>
+                        <th>Legal Basis (GDPR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Provide, operate, and maintain the App</td>
+                        <td>Contract performance</td>
+                    </tr>
+                    <tr>
+                        <td>Sync your data across devices when you sign in</td>
+                        <td>Consent (opt-in)</td>
+                    </tr>
+                    <tr>
+                        <td>Deliver AI-powered coaching through Aria</td>
+                        <td>Consent (opt-in per mode)</td>
+                    </tr>
+                    <tr>
+                        <td>Display advertisements via Google AdMob</td>
+                        <td>Legitimate interest</td>
+                    </tr>
+                    <tr>
+                        <td>Send service-related notifications (not marketing)</td>
+                        <td>Legitimate interest</td>
+                    </tr>
+                    <tr>
+                        <td>Diagnose crashes and improve performance</td>
+                        <td>Legitimate interest</td>
+                    </tr>
+                    <tr>
+                        <td>Improve the App based on aggregated analytics</td>
+                        <td>Legitimate interest</td>
+                    </tr>
+                    <tr>
+                        <td>Comply with legal obligations</td>
+                        <td>Legal obligation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ═══ 4. Permissions ═══════════════════════════════════════════ -->
+        <section>
+            <h2>4. Permissions and Their Purpose</h2>
+            <p>Arise requests certain Android permissions. Each permission is opt-in, and revoking any permission only disables the corresponding feature — it does not affect the rest of the App.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Purpose</th>
+                        <th>Data Leaves Device?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Internet</strong></td>
+                        <td>Firebase sync, AI cloud mode, ads, crash reporting</td>
+                        <td>Yes (only when features active)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Usage Access</strong> (PACKAGE_USAGE_STATS)</td>
+                        <td>Detect foreground application packages during focus sessions to check compliance with the user-defined focus whitelist, enforce discipline rules, and display on-device screen time metrics to you.</td>
+                        <td>No — never leaves device</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Notifications</strong> (POST_NOTIFICATIONS)</td>
+                        <td>Deliver task reminders, focus session alerts, and service notifications</td>
+                        <td>No</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ═══ 5. AI Features ═══════════════════════════════════════════ -->
+        <section>
+            <h2>5. AI Features and Data Processing</h2>
+            <p>Arise includes an AI assistant called "Aria". You have complete control over how Aria processes your data:</p>
+
+            <h3>5.1 Local AI Mode (Default)</h3>
+            <p>All AI processing occurs on your device using Google MediaPipe. <strong>No data is sent to any external server.</strong> This is the default mode.</p>
+
+            <h3>5.2 Cloud AI Mode (Opt-In)</h3>
+            <p>If you explicitly enable Cloud AI mode, the following data may be sent to the Groq Cloud API (which runs the Llama 3.3 70B model) for processing:</p>
+            <ul>
+                <li>Your chat messages</li>
+                <li>Conversation history for context</li>
+                <li>Player profile stats (level, rank, tasks completed, etc.) — only if you allow via AI Privacy Controls</li>
+                <li>Recent journal entries — only if you allow via AI Privacy Controls</li>
+                <li>Notes — only if you allow via AI Privacy Controls</li>
+                <li>Focus session/Protocol settings — only if you allow via AI Privacy Controls</li>
+            </ul>
+            <p>This data is processed transiently by the API and is not persistently stored by the third-party AI provider beyond the duration of the API call. We encourage you to review <a href="https://groq.com/privacy-policy/" target="_blank" rel="noopener">Groq's Privacy Policy</a>.</p>
+
+            <h3>5.3 AI Privacy Controls</h3>
+            <p>You can individually enable or disable Aria's access to each category of your data (player stats, journal, notes, protocol settings) via <strong>Settings → AI Privacy Control</strong>. You can switch between Local and Cloud AI at any time.</p>
+        </section>
+
+        <!-- ═══ 6. Data Storage and Security ═════════════════════════════ -->
+        <section>
+            <h2>6. Data Storage and Security</h2>
+
+            <h3>6.1 Local Storage</h3>
+            <p>Your data is stored locally on your device using Android DataStore (preferences) and Room Database (SQLite). This storage is sandboxed by the Android operating system and is inaccessible to other apps.</p>
+
+            <h3>6.2 Cloud Storage (Opt-In)</h3>
+            <p>If you sign in and enable sync, your data is stored in:</p>
+            <ul>
+                <li><strong>Google Firebase Firestore:</strong> User account information, username, and player stats are stored in your private Firestore document, protected by Firebase Security Rules that ensure only authenticated users can access their own data.</li>
+                <li><strong>Google Drive App Data Folder:</strong> Full app backups (tasks, habits, journal entries, projects, settings, and optional wallpaper) are stored in your Google Drive's hidden application data folder. Only Arise can access this folder — not even you can browse it via the Drive web interface, and we cannot access it either. This data is encrypted in transit and at rest by Google.</li>
+            </ul>
+
+            <h3>6.3 Security Measures</h3>
+            <ul>
+                <li>Passwords are never stored in plain text. Firebase Authentication handles all credential management using industry-standard encryption and hashing.</li>
+                <li>All network communications use HTTPS/TLS encryption.</li>
+                <li>Firebase Security Rules enforce per-user data isolation.</li>
+                <li>Firebase App Check with Play Integrity is enabled to protect against abuse and unauthorized access.</li>
+                <li>We implement reasonable technical and organizational security measures to protect your data. However, no method of electronic storage or internet transmission is 100% secure, and we cannot guarantee absolute security.</li>
+            </ul>
+        </section>
+
+        <!-- ═══ 7. Advertising ═══════════════════════════════════════════ -->
+        <section>
+            <h2>7. Advertising</h2>
+            <p>Arise displays banner advertisements using Google AdMob. AdMob may collect:</p>
+            <ul>
+                <li>Device advertising identifier (Google Advertising ID)</li>
+                <li>Device information (model, OS version)</li>
+                <li>IP address (for geographic ad targeting at a broad level)</li>
+                <li>Ad interaction data (impressions, clicks)</li>
+            </ul>
+            <p>We do not share your personal data (journal entries, tasks, habits, usage stats, etc.) with advertisers or ad networks. For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+            <p>You can opt out of personalized ads via your device's Google Settings under <strong>Ads</strong>.</p>
+        </section>
+
+        <!-- ═══ 8. Data Sharing and Disclosure ═══════════════════════════ -->
+        <section>
+            <h2>8. Data Sharing and Disclosure</h2>
+            <p>We do not sell, trade, or rent your personal information. We share data only in the following limited circumstances:</p>
+
+            <h3>8.1 Service Providers</h3>
+            <p>We use the following third-party services that may process data on our behalf:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Provider</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Firebase Authentication</td>
+                        <td>Google LLC</td>
+                        <td>User account management and secure sign-in</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Firestore</td>
+                        <td>Google LLC</td>
+                        <td>Cloud data storage and sync (opt-in)</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase Analytics</td>
+                        <td>Google LLC</td>
+                        <td>Anonymized usage analytics</td>
+                    </tr>
+                    <tr>
+                        <td>Google AdMob</td>
+                        <td>Google LLC</td>
+                        <td>In-app advertising</td>
+                    </tr>
+                    <tr>
+                        <td>Google Drive API</td>
+                        <td>Google LLC</td>
+                        <td>App data backup and restore (opt-in)</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase App Check</td>
+                        <td>Google LLC</td>
+                        <td>Abuse protection via Play Integrity</td>
+                    </tr>
+                    <tr>
+                        <td>Groq Cloud API</td>
+                        <td>Groq, Inc.</td>
+                        <td>AI chat processing (opt-in, Cloud AI mode only)</td>
+                    </tr>
+                    <tr>
+                        <td>Google MediaPipe</td>
+                        <td>Google LLC</td>
+                        <td>On-device AI inference (default, no data sent)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>8.2 Community Features</h3>
+            <p>If you participate in the Community leaderboard, the following information is visible to other Arise users:</p>
+            <ul>
+                <li>Username</li>
+                <li>Profile picture (if set)</li>
+                <li>Level and XP</li>
+            </ul>
+            <p>No other personal data (journal entries, tasks, habits, email, focus sessions, screen time) is shared with other users.</p>
+
+            <h3>8.3 Legal Requirements</h3>
+            <p>We may disclose your information if required to do so by law, regulation, court order, or governmental authority, or if we believe in good faith that such disclosure is necessary to protect the rights, property, or safety of our users or the public.</p>
+        </section>
+
+        <!-- ═══ 9. Data Retention ════════════════════════════════════════ -->
+        <section>
+            <h2>9. Data Retention</h2>
+            <ul>
+                <li><strong>Local Data:</strong> Retained on your device until you delete it within the App or uninstall the App.</li>
+                <li><strong>Cloud Data (Firebase):</strong> Retained while your account is active. Upon in-app account deletion, cloud data is permanently deleted after account verification.</li>
+                <li><strong>Google Drive Backups:</strong> Retained in your personal Google Drive while your account is active. In-app account deletion deletes the app backup from Google Drive before deleting your account. If you request deletion outside the app, you may also remove the backup or revoke Arise's access from your Google Account settings.</li>
+                <li><strong>Analytics Data:</strong> Anonymized analytics data is retained per Google's data retention policies (default: 14 months, not linked to your identity).</li>
+                <li><strong>AI Conversations:</strong> Stored locally on your device. Cloud AI API calls are transient — data is not retained by Groq beyond the API request.</li>
+            </ul>
+        </section>
+
+        <!-- ═══ 10. Your Rights ══════════════════════════════════════════ -->
+        <section>
+            <h2>10. Your Rights</h2>
+            <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+
+            <h3>For All Users</h3>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+                <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data.</li>
+                <li><strong>Deletion:</strong> Request deletion of your account and associated data. You can do this directly from <strong>Settings</strong> within the App.</li>
+                <li><strong>Data Portability:</strong> Receive your data in a structured, machine-readable format via the Google Drive backup feature.</li>
+                <li><strong>Withdraw Consent:</strong> Revoke consent for cloud sync, cloud AI, or any optional feature at any time via Settings.</li>
+            </ul>
+
+            <h3>For EU/EEA Users (GDPR)</h3>
+            <p>Under the General Data Protection Regulation, you additionally have the right to:</p>
+            <ul>
+                <li>Object to processing based on legitimate interests.</li>
+                <li>Restrict processing of your personal data.</li>
+                <li>Lodge a complaint with your local data protection authority.</li>
+            </ul>
+
+            <h3>For California Users (CCPA/CPRA)</h3>
+            <p>Under the California Consumer Privacy Act and California Privacy Rights Act, you have the right to:</p>
+            <ul>
+                <li>Know what personal information is collected, used, and shared.</li>
+                <li>Request deletion of your personal information.</li>
+                <li>Opt-out of the sale of personal information. <strong>We do not sell your personal information.</strong></li>
+                <li>Non-discrimination for exercising your privacy rights.</li>
+            </ul>
+
+            <h3>For Users in Other Jurisdictions</h3>
+            <p>If you are located in any other jurisdiction with applicable data protection laws (e.g., LGPD in Brazil, POPIA in South Africa, PDPA in Singapore/Thailand, or India's DPDP Act), we will honor your rights as required by applicable law. Contact us using the details in Section 15 to exercise your rights.</p>
+
+            <p>To exercise any of these rights, contact us at the email provided in Section 15. We will respond within 30 days (or such shorter period as required by applicable law).</p>
+        </section>
+
+        <!-- ═══ 11. International Data Transfers ═════════════════════════ -->
+        <section>
+            <h2>11. International Data Transfers</h2>
+            <p>Arise uses cloud services provided by Google LLC (United States) and Groq, Inc. (United States). If you are located outside the United States, your data may be transferred to and processed in the United States or other countries where our service providers maintain facilities.</p>
+            <p>These transfers are protected by the service providers' compliance with applicable data protection frameworks, including Standard Contractual Clauses (SCCs) and the EU-U.S. Data Privacy Framework where applicable.</p>
+        </section>
+
+        <!-- ═══ 12. Children's Privacy ═══════════════════════════════════ -->
+        <section>
+            <h2>12. Children's Privacy</h2>
+            <p>Arise is not directed to children under the age of 13 (or the applicable minimum age in your jurisdiction). We do not knowingly collect personal information from children under 13.</p>
+            <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at the email provided in Section 15. We will promptly investigate and delete such information.</p>
+            <p>If we become aware that we have collected personal information from a child under 13 without parental consent, we will take steps to delete that information as quickly as possible.</p>
+        </section>
+
+        <!-- ═══ 13. Data Security Incident Response ══════════════════════ -->
+        <section>
+            <h2>13. Data Security Incident Response</h2>
+            <p>In the unlikely event of a data breach that affects your personal information, we will:</p>
+            <ul>
+                <li>Notify affected users without undue delay and no later than 72 hours after becoming aware of the breach (as required by applicable law).</li>
+                <li>Notify relevant data protection authorities as required by law.</li>
+                <li>Take immediate steps to contain and remediate the breach.</li>
+                <li>Provide clear information about what data was affected and recommended protective actions.</li>
+            </ul>
+        </section>
+
+        <!-- ═══ 14. Changes to This Policy ═══════════════════════════════ -->
+        <section>
+            <h2>14. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make material changes:</p>
+            <ul>
+                <li>We will update the "Last Updated" date at the top of this page.</li>
+                <li>We will notify you through an in-app notification before the changes take effect.</li>
+                <li>For significant changes that affect how we process your data, we will seek your renewed consent where required by law.</li>
+            </ul>
+            <p>We encourage you to review this Privacy Policy periodically. Your continued use of the App after any changes constitutes your acceptance of the updated policy.</p>
+        </section>
+
+        <!-- ═══ 15. Contact Us ═══════════════════════════════════════════ -->
+        <section>
+            <h2>15. Contact Us</h2>
+            <p>If you have any questions, concerns, requests, or complaints regarding this Privacy Policy or our data practices, please contact us at:</p>
+            <div class="info-box">
+                <p><strong>Developer:</strong> Roshan Sharma</p>
+                <p><strong>Email:</strong> <a href="mailto:roshan887407@gmail.com">roshan887407@gmail.com</a></p>
+                <p><strong>App:</strong> Arise — Digital Discipline &amp; Growth</p>
+                <p><strong>Platform:</strong> Google Play Store (Android)</p>
+            </div>
+            <p>We will acknowledge your request within 48 hours and respond substantively within 30 days.</p>
+        </section>
+
+        <!-- ═══ 16. Google Play Requirements Disclosure ═══════════════════ -->
+        <section>
+            <h2>16. Google Play Data Safety Disclosure Summary</h2>
+            <p>In accordance with Google Play Store requirements, the following is a summary of our data handling practices:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Collected?</th>
+                        <th>Shared?</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Email address</td>
+                        <td>Yes (if signed in)</td>
+                        <td>No</td>
+                        <td>Account management</td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td>Yes (if signed in)</td>
+                        <td>Community leaderboard</td>
+                        <td>Account identity &amp; community</td>
+                    </tr>
+                    <tr>
+                        <td>Profile picture</td>
+                        <td>Yes (optional)</td>
+                        <td>Community leaderboard</td>
+                        <td>User profile</td>
+                    </tr>
+                    <tr>
+                        <td>App activity (tasks, habits, journal)</td>
+                        <td>Yes (locally)</td>
+                        <td>No</td>
+                        <td>App functionality</td>
+                    </tr>
+                    <tr>
+                        <td>App usage data (screen time)</td>
+                        <td>On-device only</td>
+                        <td>No</td>
+                        <td>Digital discipline features</td>
+                    </tr>
+                    <tr>
+                        <td>Crash logs &amp; diagnostics</td>
+                        <td>Yes (anonymized)</td>
+                        <td>Firebase/Google</td>
+                        <td>App stability</td>
+                    </tr>
+                    <tr>
+                        <td>Device identifiers (Ad ID)</td>
+                        <td>By AdMob SDK</td>
+                        <td>Google AdMob</td>
+                        <td>Advertising</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="info-box">
+                <p><strong>Data encryption:</strong> All data is encrypted in transit (HTTPS/TLS). Cloud data is encrypted at rest by Google.</p>
+                <p><strong>Data deletion:</strong> You can request account and data deletion from within the App settings or by contacting us at <a href="mailto:roshan887407@gmail.com">roshan887407@gmail.com</a>.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025–2026 Roshan Sharma. All rights reserved.</p>
+            <p>Arise — Digital Discipline &amp; Growth</p>
+            <p style="margin-top: 12px;">This privacy policy was created to comply with Google Play Store requirements, GDPR (EU), CCPA/CPRA (California), and other applicable privacy regulations.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
