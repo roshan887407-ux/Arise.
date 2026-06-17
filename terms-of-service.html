@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service — Arise</title>
-    <meta name="description" content="Terms of Service for Arise — Digital Discipline &amp; Growth Android application by Roshan Sharma.">
+    <meta name="description" content="Terms of Service for Arise — A Self Development Ecosystem. Android application by Roshan Sharma.">
     <style>
         :root {
-            --bg: #0a0a0f;
-            --surface: #111118;
-            --surface-alt: #16161f;
-            --border: #23233a;
-            --text: #e4e4ef;
-            --text-secondary: #8b8ba0;
-            --accent: #7c5cfc;
-            --accent-soft: rgba(124, 92, 252, 0.12);
+            --bg: #0D0F14;
+            --surface: #151820;
+            --card: #1C2030;
+            --border: rgba(200, 169, 126, 0.15);
+            --text: #F0EDE8;
+            --text-secondary: #9A9590;
+            --text-muted: #6B7080;
+            --accent: #C8A97E;
+            --accent-light: #E8C99A;
+            --accent-soft: rgba(200, 169, 126, 0.08);
             --warning: #ffb347;
             --success: #4ade80;
             --danger: #f87171;
+            --glass-bg: rgba(28, 32, 48, 0.6);
+            --glass-border: rgba(200, 169, 126, 0.12);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -50,18 +54,22 @@
             gap: 24px;
             margin-top: 16px;
             font-size: 0.85rem;
+            flex-wrap: wrap;
         }
-        .nav-links a { color: var(--accent); text-decoration: none; }
-        .nav-links a:hover { text-decoration: underline; }
+        .nav-links a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover { text-decoration: underline; color: var(--accent-light); }
 
         .commitment-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
             border-radius: 16px;
             padding: 28px;
             margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(200, 169, 126, 0.08);
         }
-        .commitment-card h2 { font-size: 1.2rem; margin-bottom: 20px; color: var(--accent); }
+        .commitment-card h2 { font-size: 1.2rem; margin-bottom: 20px; color: var(--accent); border-bottom: none; padding-bottom: 0; }
         .commitment-point { display: flex; gap: 12px; margin-bottom: 16px; }
         .commitment-point:last-child { margin-bottom: 0; }
         .commitment-emoji { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
@@ -87,17 +95,23 @@
         li strong { color: var(--text); }
 
         .info-box {
-            background: var(--surface-alt);
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
             border-left: 3px solid var(--accent);
             border-radius: 8px;
             padding: 16px 20px;
             margin: 16px 0;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
         }
         .info-box p { margin-bottom: 4px; font-size: 0.9rem; }
         .info-box p:last-child { margin-bottom: 0; }
 
         .warning-box {
-            background: rgba(255, 179, 71, 0.06);
+            background: rgba(255, 179, 71, 0.04);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-left: 3px solid var(--warning);
             border-radius: 8px;
             padding: 16px 20px;
@@ -106,7 +120,9 @@
         .warning-box p { margin-bottom: 4px; font-size: 0.9rem; }
 
         .danger-box {
-            background: rgba(248, 113, 113, 0.06);
+            background: rgba(248, 113, 113, 0.04);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-left: 3px solid var(--danger);
             border-radius: 8px;
             padding: 16px 20px;
@@ -114,13 +130,23 @@
         }
         .danger-box p { margin-bottom: 4px; font-size: 0.9rem; }
 
-        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
-        th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--border); }
-        th { background: var(--surface); color: var(--text); font-weight: 600; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.9rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--glass-border); }
+        th { background: rgba(200, 169, 126, 0.06); color: var(--text); font-weight: 600; }
         td { color: var(--text-secondary); }
 
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+        a:hover { text-decoration: underline; color: var(--accent-light); }
 
         footer {
             text-align: center;
@@ -149,6 +175,7 @@
             <p class="last-updated">Last Updated: June 17, 2026</p>
             <p class="effective-date">Effective Date: June 17, 2026</p>
             <div class="nav-links">
+                <a href="index.html">Home</a>
                 <a href="privacy-policy.html">Privacy Policy</a>
                 <a href="community-guidelines.html">Community Guidelines</a>
                 <a href="delete-account.html">Delete My Data</a>
@@ -163,7 +190,7 @@
                 <span class="commitment-emoji">📱</span>
                 <div class="commitment-text">
                     <strong>You own your data. Completely.</strong>
-                    <p>Everything you create in Arise — habits, tasks, journal entries, goals — belongs to you and only you. We have no claim over your personal content.</p>
+                    <p>Everything you create in Arise — habits, tasks, journal entries, notes, projects — belongs to you and only you. Your personal data is backed up to your own Google Drive. We have no claim over your personal content.</p>
                 </div>
             </div>
 
@@ -172,6 +199,14 @@
                 <div class="commitment-text">
                     <strong>We don't collect your data to profit from it.</strong>
                     <p>We are not in the business of selling your information. We don't build ad profiles from your personal data. We don't share it with marketers. Period.</p>
+                </div>
+            </div>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">🎯</span>
+                <div class="commitment-text">
+                    <strong>Our Mission: Help you understand yourself.</strong>
+                    <p>Arise exists to help you understand yourself deeply, make better decisions on your own, stop being influenced by others, and face reality instead of escaping from it. This is a self-development ecosystem — not a social media platform.</p>
                 </div>
             </div>
 
@@ -187,28 +222,29 @@
                 <span class="commitment-emoji">🤖</span>
                 <div class="commitment-text">
                     <strong>AI coaching designed with privacy first.</strong>
-                    <p>Our AI assistant Aria uses secure cloud APIs. Your data is processed transiently, never saved externally, and you can control access at any time.</p>
+                    <p>Our AI assistant Aria uses the Gemini API. Your data is processed transiently, never saved externally, and you can opt out or control access at any time. Upcoming: bring your own API keys for even more privacy.</p>
                 </div>
             </div>
 
             <div class="commitment-point">
                 <span class="commitment-emoji">🗑️</span>
                 <div class="commitment-text">
-                    <strong>Delete everything, anytime.</strong>
-                    <p>Permanently delete your account and all associated data at any time from Settings. No waiting period, no retention games, no fine print.</p>
+                    <strong>Delete everything, instantly.</strong>
+                    <p>Permanently delete your account and all associated data at any time from within the app (Settings → Account → Delete Account). Instant deletion. No waiting period, no email required, no fine print.</p>
                 </div>
             </div>
         </div>
 
-        <p>These Terms of Service ("Terms") constitute a legally binding agreement between you and Roshan Sharma ("Developer", "we", "us", or "our") governing your use of the Arise mobile application ("App", "Service") available on the Google Play Store. By downloading, installing, or using the App, you confirm that you have read, understood, and agree to be bound by these Terms. If you do not agree, please uninstall the App immediately.</p>
+        <p>These Terms of Service ("Terms") constitute a legally binding agreement between you and Roshan Sharma ("Developer", "we", "us", or "our") governing your use of the Arise mobile application ("App", "Service") available on the Google Play Store. <strong>Arise — A Self Development Ecosystem.</strong> By downloading, installing, or using the App, you confirm that you have read, understood, and agree to be bound by these Terms. If you do not agree, please uninstall the App immediately.</p>
 
         <!-- ═══ 1. Acceptance ════════════════════════════════════════════ -->
         <section>
             <h2>1. Acceptance of Terms and Eligibility</h2>
             <ul>
-                <li>By using the App, you confirm you are at least <strong>13 years of age</strong>.</li>
-                <li>If you are between 13 and 18 years old, you must have parental or guardian consent to use the App.</li>
-                <li>You confirm that you have the legal capacity to enter into a binding agreement in your jurisdiction.</li>
+                <li>By using the App, you confirm you have read and agree to these Terms.</li>
+                <li>Arise is designed to be <strong>suitable for all age groups</strong>. There is no minimum age restriction. The app promotes self-development, discipline, and healthy habits — values beneficial for users of every age.</li>
+                <li>For younger users, we encourage parents and guardians to explore the app alongside them to ensure it aligns with their family values.</li>
+                <li>You confirm that you have the legal capacity to enter into a binding agreement in your jurisdiction, or that a parent or legal guardian is accepting these Terms on your behalf.</li>
                 <li>If you are using the App on behalf of an organization, you represent that you have authority to bind that organization to these Terms.</li>
             </ul>
         </section>
@@ -216,15 +252,16 @@
         <!-- ═══ 2. Description of Service ══════════════════════════════ -->
         <section>
             <h2>2. Description of Service</h2>
-            <p>Arise is a personal development application that provides:</p>
+            <p>Arise is a self-development ecosystem designed to help you understand yourself, make better decisions, avoid external influence, and face reality with clarity. The App provides:</p>
             <ul>
                 <li><strong>Habit Tracking &amp; Streaks:</strong> Daily habit logging with XP/gamification rewards.</li>
                 <li><strong>Task &amp; Project Management:</strong> Organize tasks, projects, areas, and resources.</li>
-                <li><strong>Daily Journaling:</strong> Private journaling and reflection tools, stored locally.</li>
+                <li><strong>Daily Journaling:</strong> Private journaling and reflection tools.</li>
+                <li><strong>Notes:</strong> Personal note-taking system.</li>
                 <li><strong>Digital Discipline (Protocol):</strong> Screen time awareness, focus sessions, and optional app discipline tools.</li>
-                <li><strong>AI Coaching (Aria):</strong> AI-powered personal coaching, available in local (on-device) and cloud modes.</li>
-                <li><strong>Community Features:</strong> Leaderboard, user profiles, and shared progress visibility.</li>
-                <li><strong>Gamification:</strong> XP system, levels, ranks, achievements, and in-app reward store.</li>
+                <li><strong>AI Coaching (Aria):</strong> AI-powered personal coaching using the Gemini API, with opt-out capability.</li>
+                <li><strong>Community Features:</strong> Leaderboard, Add Friends, and Challenge Friends — no posts, no feed, no content sharing.</li>
+                <li><strong>Gamification:</strong> XP system, levels, ranks, health, gold, achievements, and in-app reward store.</li>
                 <li><strong>Widgets:</strong> Home screen widgets for quick task access.</li>
             </ul>
             <p>The App is provided "as is" and we reserve the right to modify, add, or remove features at any time without prior notice.</p>
@@ -235,12 +272,12 @@
             <h2>3. User Accounts</h2>
 
             <h3>3.1 Guest Mode vs. Registered Accounts</h3>
-            <p>You may use the App fully in <strong>Guest (Local) Mode</strong> without creating an account. All data remains on your device only. If you create an account, you enable cloud sync and community features.</p>
+            <p>You may use the App fully in <strong>Guest (Local) Mode</strong> without creating an account. All data remains on your device only. If you create an account (via Google Sign-In), you enable cloud backup and community features.</p>
 
             <h3>3.2 Account Responsibilities</h3>
             <ul>
                 <li>You must provide accurate, current, and complete information when creating an account.</li>
-                <li>You are responsible for maintaining the confidentiality of your account credentials (password, etc.).</li>
+                <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
                 <li>You are responsible for all activities that occur under your account.</li>
                 <li>You must immediately notify us at <a href="mailto:roshan887407@gmail.com">roshan887407@gmail.com</a> if you suspect unauthorized access to your account.</li>
                 <li>You may not create accounts for others without their express permission.</li>
@@ -254,14 +291,62 @@
         <section>
             <h2>4. Your Data — Full Ownership &amp; Control</h2>
             <div class="info-box">
-                <p><strong>This is the most important section.</strong> All personal content you create (habits, tasks, journal entries, notes, goals) belongs exclusively to you. We make no claim of ownership over your personal data.</p>
+                <p><strong>This is the most important section.</strong> All personal content you create (habits, tasks, journal entries, notes, projects) belongs exclusively to you. We make no claim of ownership over your personal data.</p>
             </div>
 
+            <h3>4.1 Where Your Personal Data Lives</h3>
+            <p>Your personal data — habits, tasks, projects, player info, journal entries, and notes — is <strong>all backed up to your personal Google Drive</strong> (App Data folder). This data is private to you; we cannot access, read, or view it.</p>
+
+            <h3>4.2 What Firebase Stores (Community Data Only)</h3>
+            <p>Firebase Firestore is used <strong>only</strong> for community-related data:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Storage</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Level, Rank, XP</td>
+                        <td>Firebase Firestore</td>
+                        <td>Leaderboard ranking</td>
+                    </tr>
+                    <tr>
+                        <td>Health, Gold</td>
+                        <td>Firebase Firestore</td>
+                        <td>Gamification status</td>
+                    </tr>
+                    <tr>
+                        <td>Challenges</td>
+                        <td>Firebase Firestore</td>
+                        <td>Friend challenges</td>
+                    </tr>
+                    <tr>
+                        <td>Profile Picture (DP)</td>
+                        <td>Firebase Storage</td>
+                        <td>Community identity</td>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td>Firebase Firestore</td>
+                        <td>Community identity</td>
+                    </tr>
+                    <tr>
+                        <td>Friends List</td>
+                        <td>Firebase Firestore</td>
+                        <td>Social connections</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>4.3 Data Control</h3>
             <ul>
                 <li><strong>Local Mode:</strong> Your data stays exclusively on your device in Android's secure DataStore. Nothing is transmitted.</li>
-                <li><strong>Sync Mode:</strong> If you sign in, your data syncs to your personal private Firebase Firestore database and/or Google Drive App Data folder. Only you can access it — we cannot read your personal entries.</li>
+                <li><strong>Sync Mode:</strong> If you sign in, personal data syncs to your personal Google Drive. Community data syncs to Firebase.</li>
                 <li><strong>Switch anytime:</strong> You can switch between local and sync mode at any time from Settings.</li>
-                <li><strong>Full deletion:</strong> You can delete all your data at any time. Account deletion removes your Google Drive backup, cloud database, Firebase account, and local data after you verify the same Google account.</li>
+                <li><strong>Full deletion:</strong> You can delete all your data <strong>instantly from within the app</strong> (Settings → Account → Delete Account). This removes your Google Drive backup, Firebase data, Firebase account, and local data. No email required, no waiting period.</li>
             </ul>
 
             <p>By using the App, you grant us a limited, non-exclusive, non-transferable license to store and process your content <em>solely for the purpose of providing the service to you</em>. This license ends immediately when you delete your data or account.</p>
@@ -269,30 +354,42 @@
 
         <!-- ═══ 5. Community Features ════════════════════════════════════ -->
         <section>
-            <h2>5. Community Features and User-Generated Content</h2>
+            <h2>5. Community Features</h2>
 
-            <h3>5.1 What Is Publicly Visible</h3>
+            <h3>5.1 Scope of Community Features</h3>
+            <p>The Arise community consists of three features only:</p>
+            <ul>
+                <li><strong>Leaderboard:</strong> Ranks users by XP, level, and rank.</li>
+                <li><strong>Add Friends:</strong> Connect with other Arise users.</li>
+                <li><strong>Challenge Friends:</strong> Send and accept discipline challenges.</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>There are NO posts, NO feed, NO content sharing, NO messaging, NO comments, NO likes, and NO social-media-style features.</strong> The only user-generated content visible to other users is your profile picture (DP) and your username.</p>
+            </div>
+
+            <h3>5.2 What Is Publicly Visible</h3>
             <p>If you participate in Community features, the following information is visible to other Arise users:</p>
             <ul>
                 <li>Username</li>
-                <li>Profile picture (if you choose to set one)</li>
-                <li>Level, XP, and rank</li>
+                <li>Profile picture (DP), if you choose to set one</li>
+                <li>Level, XP, rank, health, and gold</li>
             </ul>
-            <p>No other personal data (journal entries, tasks, habits, email address, focus sessions, or screen time) is shared with other users.</p>
+            <p>No other personal data (journal entries, tasks, habits, notes, email address, focus sessions, or screen time) is shared with other users.</p>
 
-            <h3>5.2 Community Content License</h3>
-            <p>For content you share in Community features (username, profile picture, XP), you grant us a non-exclusive, royalty-free, worldwide license to display that content to other users of the App while you are a user.</p>
+            <h3>5.3 Community Content License</h3>
+            <p>For content visible in Community features (username, profile picture), you grant us a non-exclusive, royalty-free, worldwide license to display that content to other users of the App while you are a registered user. This license terminates immediately upon account deletion.</p>
 
-            <h3>5.3 Profile Picture and Copyright</h3>
+            <h3>5.4 Profile Picture and Copyright</h3>
             <div class="warning-box">
-                <p><strong>⚠️ Important — Profile Pictures:</strong> You are solely responsible for any profile picture (DP) you upload. By uploading a profile picture, you represent and warrant that:</p>
+                <p><strong>⚠️ Important — Profile Pictures:</strong> Your profile picture (DP) is the primary user-generated content in Arise. You are solely responsible for any image you upload. By uploading a profile picture, you represent and warrant that:</p>
                 <p>• You own the copyright to the image, OR you have obtained a valid license or explicit permission from the copyright holder to use it, AND</p>
                 <p>• The image does not infringe any third party's intellectual property rights, privacy rights, or any other rights.</p>
-                <p>Uploading images of celebrities, actors, movie characters, brand logos, or other copyrighted material without authorization is <strong>strictly prohibited</strong> and may result in immediate account suspension and content removal.</p>
+                <p>Uploading images of celebrities, actors, movie characters, brand logos, or other copyrighted material without authorization is <strong>strictly prohibited</strong> and may result in immediate account suspension and content removal. See our <a href="community-guidelines.html">Community Guidelines</a> for detailed rules.</p>
             </div>
 
-            <h3>5.4 Content Moderation</h3>
-            <p>We reserve the right, but not the obligation, to review, moderate, or remove any user content (including profile pictures) that we determine, in our sole discretion, violates these Terms or our <a href="community-guidelines.html">Community Guidelines</a>. We are not responsible for any user-generated content posted by other users.</p>
+            <h3>5.5 Content Moderation</h3>
+            <p>We reserve the right, but not the obligation, to review, moderate, or remove any user-generated content (profile pictures and usernames) that we determine, in our sole discretion, violates these Terms or our <a href="community-guidelines.html">Community Guidelines</a>. We are not responsible for any user-generated content uploaded by other users.</p>
         </section>
 
         <!-- ═══ 6. Protocol Feature ══════════════════════════════════════ -->
@@ -337,16 +434,15 @@
             <p>By using the App, you agree <strong>NOT</strong> to:</p>
             <ul>
                 <li>Use the App for any unlawful purpose or in violation of any applicable law or regulation.</li>
-                <li>Upload, post, or transmit any content that infringes any copyright, trademark, patent, trade secret, or other intellectual property or proprietary right.</li>
-                <li>Upload images, avatars, or profile pictures of celebrities, public figures, fictional characters, brand logos, or other copyrighted material without authorization from the rights holder.</li>
-                <li>Harass, abuse, intimidate, threaten, defame, or harm other users through Community features.</li>
-                <li>Post content that is discriminatory, hateful, racist, sexist, or offensive based on protected characteristics.</li>
-                <li>Post pornographic, sexually explicit, or violent content.</li>
-                <li>Impersonate any person, entity, or organization.</li>
+                <li>Upload copyrighted images as your profile picture — including photos of celebrities, public figures, fictional characters, brand logos, or other copyrighted material — without authorization from the rights holder.</li>
+                <li>Use a username that impersonates any person, entity, or organization, or that contains offensive, hateful, or discriminatory language.</li>
+                <li>Harass, abuse, intimidate, threaten, defame, or harm other users through community features.</li>
+                <li>Manipulate XP, leaderboard rankings, challenge results, or any gamification data through cheating, exploiting bugs, or automated tools.</li>
+                <li>Spam friend requests, challenges, or other community interactions.</li>
                 <li>Attempt to gain unauthorized access to any part of the App, its servers, or infrastructure.</li>
                 <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App.</li>
                 <li>Upload or transmit viruses, malware, spyware, or any malicious code.</li>
-                <li>Use automated scripts, bots, or scrapers to access the App or manipulate leaderboard data.</li>
+                <li>Use automated scripts, bots, or scrapers to access the App.</li>
                 <li>Attempt to circumvent, disable, or interfere with security features of the App.</li>
                 <li>Misrepresent your identity, qualifications, or affiliation with any person or organization.</li>
             </ul>
@@ -356,9 +452,20 @@
 
         <!-- ═══ 8. AI Features ═══════════════════════════════════════════ -->
         <section>
-            <h2>8. AI Features — Aria Disclaimer</h2>
+            <h2>8. AI Features — Aria</h2>
+
+            <h3>8.1 How Aria Works</h3>
+            <p>Aria is Arise's AI coaching assistant. Aria uses the <strong>Gemini API</strong> (by Google) to provide personalized guidance and insights. Your data is sent securely to the Gemini API for processing and is handled transiently — it is <strong>not stored, logged, or retained</strong> by the API beyond the scope of the request.</p>
+
+            <h3>8.2 Your Control Over AI</h3>
+            <ul>
+                <li><strong>Opt out anytime:</strong> You can completely disable AI features from Settings → AI Privacy Controls. When disabled, no data is sent to any external API.</li>
+                <li><strong>Upcoming — Bring Your Own API Key:</strong> We are developing a feature that will allow you to use your own personal API keys from popular AI providers (such as Google, OpenAI, Anthropic, etc.) for even greater privacy and control. When you use your own key, AI requests go directly from your device to your chosen provider — Arise never sees the request or response.</li>
+            </ul>
+
+            <h3>8.3 Important Disclaimer</h3>
             <div class="warning-box">
-                <p><strong>⚠️ Important Disclaimer:</strong> Aria, our AI assistant, provides general personal development guidance only.</p>
+                <p><strong>⚠️ Important Disclaimer:</strong> Aria provides general personal development guidance only.</p>
                 <p>AI-generated content is NOT a substitute for professional medical, psychological, psychiatric, financial, legal, or other professional advice. Always consult qualified professionals for such needs.</p>
             </div>
             <ul>
@@ -380,11 +487,11 @@
         <!-- ═══ 10. DMCA / Copyright ══════════════════════════════════════ -->
         <section>
             <h2>10. Copyright Infringement — DMCA Notice &amp; Takedown</h2>
-            <p>We respect intellectual property rights. If you believe that content on the App infringes your copyright, please send a notice to us with the following information:</p>
+            <p>We respect intellectual property rights. If you believe that a user's profile picture on the App infringes your copyright, please send a notice to us with the following information:</p>
             <ol>
                 <li>Your name and contact information (email address).</li>
                 <li>Identification of the copyrighted work you claim has been infringed.</li>
-                <li>Identification of the material you claim is infringing (e.g., a specific user's profile picture) and enough information to locate it.</li>
+                <li>Identification of the infringing material (e.g., a specific user's profile picture) and enough information to locate it.</li>
                 <li>A statement that you have a good faith belief that the use is not authorized by the copyright owner, its agent, or the law.</li>
                 <li>A statement that the information in your notice is accurate and, under penalty of perjury, that you are the copyright owner or authorized to act on the owner's behalf.</li>
                 <li>Your electronic or physical signature.</li>
@@ -411,19 +518,29 @@
             <p>OUR TOTAL CUMULATIVE LIABILITY TO YOU FOR ANY CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR THE APP SHALL NOT EXCEED ₹500 (FIVE HUNDRED INDIAN RUPEES) OR THE AMOUNT YOU PAID US IN THE PAST 12 MONTHS, WHICHEVER IS GREATER.</p>
 
             <h3>11.3 Indemnification</h3>
-            <p>You agree to indemnify, defend, and hold harmless Roshan Sharma and any affiliates from and against any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising out of or in any way connected with: (a) your access to or use of the App; (b) your violation of these Terms; (c) your violation of any third-party right, including copyright, privacy, or intellectual property rights; or (d) any content you upload or share through the App.</p>
+            <p>You agree to indemnify, defend, and hold harmless Roshan Sharma and any affiliates from and against any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising out of or in any way connected with: (a) your access to or use of the App; (b) your violation of these Terms; (c) your violation of any third-party right, including copyright, privacy, or intellectual property rights; or (d) any profile picture or username you upload or use through the App.</p>
         </section>
 
-        <!-- ═══ 12. Governing Law ═════════════════════════════════════════ -->
+        <!-- ═══ 12. Account Deletion ═════════════════════════════════════ -->
         <section>
-            <h2>12. Governing Law and Dispute Resolution</h2>
+            <h2>12. Account Deletion</h2>
+            <div class="info-box">
+                <p><strong>Deletion is instant and performed from within the app only.</strong></p>
+                <p>Navigate to Settings → Account → Delete Account. After re-authenticating with your Google account, all your data — Google Drive backup, Firebase community data, Firebase Auth account, and local data — will be <strong>permanently and immediately deleted</strong>.</p>
+            </div>
+            <p>There is no email-based deletion method and no waiting period. Deletion is permanent and irreversible. For full details, see our <a href="delete-account.html">Delete My Data</a> page.</p>
+        </section>
+
+        <!-- ═══ 13. Governing Law ═════════════════════════════════════════ -->
+        <section>
+            <h2>13. Governing Law and Dispute Resolution</h2>
             <p>These Terms are governed by the laws of India, without regard to conflict of law principles. Any disputes arising out of or in connection with these Terms shall first be attempted to be resolved through good-faith negotiation between the parties.</p>
             <p>If negotiation fails, disputes shall be subject to the jurisdiction of the courts of India. Notwithstanding the foregoing, we reserve the right to seek injunctive relief in any court of competent jurisdiction.</p>
         </section>
 
-        <!-- ═══ 13. Changes ══════════════════════════════════════════════ -->
+        <!-- ═══ 14. Changes ══════════════════════════════════════════════ -->
         <section>
-            <h2>13. Changes to These Terms</h2>
+            <h2>14. Changes to These Terms</h2>
             <p>We may update these Terms from time to time. When we make material changes, we will:</p>
             <ul>
                 <li>Update the "Last Updated" date at the top of this page.</li>
@@ -433,19 +550,19 @@
             <p>Your continued use of the App after changes become effective constitutes your acceptance of the updated Terms. If you do not agree to the updated Terms, you must stop using the App and delete your account.</p>
         </section>
 
-        <!-- ═══ 14. Termination ══════════════════════════════════════════ -->
+        <!-- ═══ 15. Termination ══════════════════════════════════════════ -->
         <section>
-            <h2>14. Termination</h2>
+            <h2>15. Termination</h2>
             <ul>
-                <li><strong>By you:</strong> You may terminate your account at any time through Settings → Account → Delete Account.</li>
+                <li><strong>By you:</strong> You may terminate your account at any time through Settings → Account → Delete Account. Deletion is instant.</li>
                 <li><strong>By us:</strong> We may suspend or terminate your access immediately if you violate these Terms, particularly the Acceptable Use Policy.</li>
-                <li><strong>Effect of termination:</strong> Upon termination, your right to use the App ceases. We will delete your account data per our data retention policy (see our <a href="privacy-policy.html">Privacy Policy</a>).</li>
+                <li><strong>Effect of termination:</strong> Upon termination, your right to use the App ceases. All your data is deleted immediately per our deletion policy (see our <a href="delete-account.html">Delete My Data</a> page).</li>
             </ul>
         </section>
 
-        <!-- ═══ 15. Miscellaneous ═════════════════════════════════════════ -->
+        <!-- ═══ 16. Miscellaneous ═════════════════════════════════════════ -->
         <section>
-            <h2>15. Miscellaneous</h2>
+            <h2>16. Miscellaneous</h2>
             <ul>
                 <li><strong>Entire Agreement:</strong> These Terms, together with our Privacy Policy and Community Guidelines, constitute the entire agreement between you and us regarding the App.</li>
                 <li><strong>Severability:</strong> If any provision of these Terms is found to be unenforceable, that provision will be modified to the minimum extent necessary, and the remaining provisions will continue in full force and effect.</li>
@@ -455,18 +572,19 @@
             </ul>
         </section>
 
-        <!-- ═══ 16. Contact ══════════════════════════════════════════════ -->
+        <!-- ═══ 17. Contact ══════════════════════════════════════════════ -->
         <section>
-            <h2>16. Contact Us</h2>
+            <h2>17. Contact Us</h2>
             <p>Questions about these Terms? Reach us at:</p>
             <div class="info-box">
                 <p><strong>Developer:</strong> Roshan Sharma</p>
                 <p><strong>Email:</strong> <a href="mailto:roshan887407@gmail.com">roshan887407@gmail.com</a></p>
-                <p><strong>App:</strong> Arise — Digital Discipline &amp; Growth</p>
+                <p><strong>App:</strong> Arise — A Self Development Ecosystem</p>
                 <p><strong>Platform:</strong> Google Play Store (Android)</p>
             </div>
             <p>We will acknowledge your message within 48 hours and respond substantively within 30 days.</p>
             <p>
+                <a href="index.html">Home</a> &nbsp;|&nbsp;
                 <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
                 <a href="community-guidelines.html">Community Guidelines</a> &nbsp;|&nbsp;
                 <a href="delete-account.html">Delete My Data</a>
@@ -474,8 +592,8 @@
         </section>
 
         <footer>
-            <p>© 2025–2026 Roshan Sharma. All rights reserved.</p>
-            <p>Arise — Digital Discipline &amp; Growth</p>
+            <p>&copy; 2025–2026 Roshan Sharma. All rights reserved.</p>
+            <p>Arise — A Self Development Ecosystem</p>
             <p style="margin-top: 12px;">These Terms of Service were created to comply with Google Play Store requirements and applicable laws including the IT Act 2000 (India), GDPR (EU), and CCPA (California).</p>
         </footer>
 
