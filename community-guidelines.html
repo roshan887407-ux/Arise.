@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Guidelines — Arise</title>
-    <meta name="description" content="Community Guidelines for Arise — Digital Discipline &amp; Growth. Rules for respectful, safe, and copyright-compliant community participation.">
+    <meta name="description" content="Community Guidelines for Arise — A Self Development Ecosystem. Rules for respectful, safe, and copyright-compliant community participation.">
     <style>
         :root {
-            --bg: #0a0a0f;
-            --surface: #111118;
-            --surface-alt: #16161f;
-            --border: #23233a;
-            --text: #e4e4ef;
-            --text-secondary: #8b8ba0;
-            --accent: #7c5cfc;
-            --accent-soft: rgba(124, 92, 252, 0.12);
+            --bg: #0D0F14;
+            --surface: #151820;
+            --card: #1C2030;
+            --border: rgba(200, 169, 126, 0.15);
+            --text: #F0EDE8;
+            --text-secondary: #9A9590;
+            --text-muted: #6B7080;
+            --accent: #C8A97E;
+            --accent-light: #E8C99A;
+            --accent-soft: rgba(200, 169, 126, 0.08);
             --warning: #ffb347;
             --success: #4ade80;
             --danger: #f87171;
+            --glass-bg: rgba(28, 32, 48, 0.6);
+            --glass-border: rgba(200, 169, 126, 0.12);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -50,17 +54,21 @@
             gap: 24px;
             margin-top: 16px;
             font-size: 0.85rem;
+            flex-wrap: wrap;
         }
-        .nav-links a { color: var(--accent); text-decoration: none; }
-        .nav-links a:hover { text-decoration: underline; }
+        .nav-links a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover { text-decoration: underline; color: var(--accent-light); }
 
         .hero-card {
-            background: linear-gradient(135deg, rgba(124,92,252,0.15), rgba(124,92,252,0.05));
-            border: 1px solid rgba(124,92,252,0.3);
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
             border-radius: 16px;
             padding: 32px;
             margin-bottom: 40px;
             text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(200, 169, 126, 0.08);
         }
         .hero-card .hero-emoji { font-size: 3rem; margin-bottom: 12px; display: block; }
         .hero-card h2 { font-size: 1.4rem; color: var(--text); margin-bottom: 12px; }
@@ -74,10 +82,13 @@
         }
 
         .rule-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
             border-radius: 12px;
             padding: 20px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         }
 
         .rule-card.do { border-left: 3px solid var(--success); }
@@ -116,17 +127,24 @@
         li strong { color: var(--text); }
 
         .info-box {
-            background: var(--surface-alt);
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-left: 3px solid var(--accent);
+            border: 1px solid var(--glass-border);
             border-left: 3px solid var(--accent);
             border-radius: 8px;
             padding: 16px 20px;
             margin: 16px 0;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
         }
         .info-box p { margin-bottom: 4px; font-size: 0.9rem; }
         .info-box p:last-child { margin-bottom: 0; }
 
         .warning-box {
-            background: rgba(255, 179, 71, 0.06);
+            background: rgba(255, 179, 71, 0.04);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-left: 3px solid var(--warning);
             border-radius: 8px;
             padding: 16px 20px;
@@ -135,7 +153,9 @@
         .warning-box p { margin-bottom: 4px; font-size: 0.9rem; }
 
         .danger-box {
-            background: rgba(248, 113, 113, 0.06);
+            background: rgba(248, 113, 113, 0.04);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-left: 3px solid var(--danger);
             border-radius: 8px;
             padding: 16px 20px;
@@ -144,7 +164,9 @@
         .danger-box p { margin-bottom: 4px; font-size: 0.9rem; }
 
         .success-box {
-            background: rgba(74, 222, 128, 0.06);
+            background: rgba(74, 222, 128, 0.04);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border-left: 3px solid var(--success);
             border-radius: 8px;
             padding: 16px 20px;
@@ -152,13 +174,23 @@
         }
         .success-box p { margin-bottom: 4px; font-size: 0.9rem; }
 
-        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
-        th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--border); }
-        th { background: var(--surface); color: var(--text); font-weight: 600; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.9rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--glass-border); }
+        th { background: rgba(200, 169, 126, 0.06); color: var(--text); font-weight: 600; }
         td { color: var(--text-secondary); }
 
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+        a:hover { text-decoration: underline; color: var(--accent-light); }
 
         footer {
             text-align: center;
@@ -186,6 +218,7 @@
             <p class="last-updated">Last Updated: June 17, 2026</p>
             <p class="effective-date">Effective Date: June 17, 2026</p>
             <div class="nav-links">
+                <a href="index.html">Home</a>
                 <a href="privacy-policy.html">Privacy Policy</a>
                 <a href="terms-of-service.html">Terms of Service</a>
                 <a href="delete-account.html">Delete My Data</a>
@@ -196,10 +229,15 @@
         <div class="hero-card">
             <span class="hero-emoji">🤝</span>
             <h2>A Community Built on Discipline &amp; Respect</h2>
-            <p>The Arise community exists for one purpose: to help each other grow. We are builders, not scrollers. Warriors, not critics. These guidelines exist to keep this space safe, positive, and legally sound for everyone.</p>
+            <p>The Arise community exists for one purpose: to help each other grow. We are builders, not scrollers. Warriors, not critics. These guidelines keep this space safe, positive, and legally sound for everyone — across all age groups.</p>
         </div>
 
-        <p>These Community Guidelines apply to all users who participate in Arise's community features, including the leaderboard, user profiles, and any other social elements within the App. By participating, you agree to follow these rules. Violations may result in content removal, account suspension, or permanent termination.</p>
+        <p>These Community Guidelines apply to all users who participate in Arise's community features — the <strong>Leaderboard</strong>, <strong>Add Friends</strong>, and <strong>Challenge Friends</strong> systems — as well as user profiles (display pictures and usernames). By participating, you agree to follow these rules. Violations may result in content removal, account suspension, or permanent termination.</p>
+
+        <div class="info-box">
+            <p><strong>What is the Arise Community?</strong></p>
+            <p>The community feature consists of three elements only: a <strong>Leaderboard</strong> (ranking users by XP and level), an <strong>Add Friends</strong> system (connect with other users), and a <strong>Challenge Friends</strong> system (send and accept discipline challenges). There is no feed, no posts, no content sharing, and no messaging. The only user-generated content visible to others is your <strong>profile picture (DP)</strong> and your <strong>username</strong>.</p>
+        </div>
 
         <!-- ═══ Quick Rules ════════════════════════════════════════════════ -->
         <section>
@@ -211,10 +249,11 @@
                     <ul>
                         <li>Use your own photo or original artwork as your DP</li>
                         <li>Be respectful and encouraging to other members</li>
-                        <li>Report content that violates these guidelines</li>
+                        <li>Report profiles that violate these guidelines</li>
                         <li>Use a username that doesn't impersonate anyone</li>
                         <li>Represent yourself honestly</li>
-                        <li>Inspire others through your progress</li>
+                        <li>Inspire others through your progress on the leaderboard</li>
+                        <li>Challenge friends in a spirit of healthy competition</li>
                     </ul>
                 </div>
                 <div class="rule-card dont">
@@ -222,10 +261,10 @@
                     <ul>
                         <li>Upload copyrighted photos as your DP (actors, logos, etc.)</li>
                         <li>Harass, bully, or demean other users</li>
-                        <li>Post hate speech or discriminatory content</li>
+                        <li>Use hate speech or discriminatory language in your username</li>
                         <li>Impersonate celebrities or other users</li>
-                        <li>Spam, manipulate, or exploit the system</li>
-                        <li>Share sexually explicit or violent content</li>
+                        <li>Manipulate XP, leaderboard rankings, or challenge results</li>
+                        <li>Use sexually explicit or violent imagery as your DP</li>
                     </ul>
                 </div>
             </div>
@@ -237,7 +276,7 @@
 
             <div class="warning-box">
                 <p><strong>⚠️ This is the most important section for protecting yourself and us legally.</strong></p>
-                <p>Your profile picture is visible to all Arise users. You are 100% responsible for what you upload.</p>
+                <p>Your profile picture (DP) is the primary user-generated content in Arise and is visible to all community members. You are 100% responsible for what you upload.</p>
             </div>
 
             <h3>2.1 What You CAN Use as Your DP</h3>
@@ -274,19 +313,103 @@
             </ul>
         </section>
 
+        <!-- ═══ Community Features Scope ═══════════════════════════════════ -->
+        <section>
+            <h2>3. Community Features — Scope and Rules</h2>
+
+            <h3>3.1 Leaderboard</h3>
+            <p>The leaderboard ranks users by XP, level, and rank. All data shown on the leaderboard (level, rank, XP, health, gold) is computed from your in-app activity and stored in Firebase. Attempting to manipulate leaderboard data through cheating, exploiting bugs, or using automated tools is strictly prohibited and will result in an account reset and ban.</p>
+
+            <h3>3.2 Add Friends</h3>
+            <p>You can add other Arise users as friends. When you add a friend, they can see your username, profile picture, level, and rank. Sending friend requests with the intent to harass or spam is prohibited.</p>
+
+            <h3>3.3 Challenge Friends</h3>
+            <p>You can send discipline challenges to friends. Challenges are a way to motivate each other and compete in a healthy manner. Abuse of the challenge system (e.g., sending excessive challenge requests, exploiting challenge mechanics) is prohibited.</p>
+
+            <h3>3.4 What the Community Does NOT Include</h3>
+            <div class="info-box">
+                <p>Arise does <strong>not</strong> have any of the following community features:</p>
+                <p>❌ No posts, feed, or timeline</p>
+                <p>❌ No content sharing or media uploads (beyond your profile picture)</p>
+                <p>❌ No direct messaging or chat</p>
+                <p>❌ No comments, likes, or reactions</p>
+                <p>❌ No stories, reels, or any social-media-style content</p>
+            </div>
+            <p>The only user-generated content visible to other users is your <strong>profile picture (DP)</strong> and your <strong>username</strong>. All other data visible on the leaderboard (level, rank, XP, health, gold) is system-generated from your app activity.</p>
+        </section>
+
+        <!-- ═══ Data Stored in Firebase ════════════════════════════════════ -->
+        <section>
+            <h2>4. Community Data Stored in Firebase</h2>
+            <p>The following data is stored in Firebase Firestore for community features:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Purpose</th>
+                        <th>Visible to Others</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Username</td>
+                        <td>Identity on leaderboard and friends list</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Profile Picture (DP)</td>
+                        <td>Visual identity in community</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Level &amp; Rank</td>
+                        <td>Leaderboard ranking</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>XP (Experience Points)</td>
+                        <td>Leaderboard ranking</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Health</td>
+                        <td>Gamification status</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Gold</td>
+                        <td>In-app currency</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Challenges</td>
+                        <td>Active and completed challenges</td>
+                        <td>To challenge participants only</td>
+                    </tr>
+                    <tr>
+                        <td>Friends List</td>
+                        <td>Social connections</td>
+                        <td>To you only</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Your personal data — habits, tasks, journal entries, notes, projects — is <strong>never</strong> stored in Firebase. That data is backed up to your personal Google Drive and remains private to you.</p>
+        </section>
+
         <!-- ═══ Respect & Behaviour ═══════════════════════════════════════ -->
         <section>
-            <h2>3. Respect and Behavior Standards</h2>
+            <h2>5. Respect and Behavior Standards</h2>
 
-            <h3>3.1 Be Respectful</h3>
-            <p>Arise is a growth community. Every member is on their own journey. We expect all interactions to be:</p>
+            <h3>5.1 Be Respectful</h3>
+            <p>Arise is a growth community suitable for all age groups. Every member is on their own journey. We expect all interactions to be:</p>
             <ul>
                 <li>Respectful and constructive</li>
                 <li>Encouraging and supportive</li>
                 <li>Free from personal attacks or mockery</li>
+                <li>Appropriate for users of all ages</li>
             </ul>
 
-            <h3>3.2 Prohibited Behavior</h3>
+            <h3>5.2 Prohibited Behavior</h3>
             <p>The following behaviors will result in immediate action against your account:</p>
 
             <table>
@@ -306,7 +429,7 @@
                         <td>Permanent account termination</td>
                     </tr>
                     <tr>
-                        <td>Sharing sexually explicit content</td>
+                        <td>Sexually explicit or violent profile picture</td>
                         <td>Permanent account termination</td>
                     </tr>
                     <tr>
@@ -329,14 +452,18 @@
                         <td>XP/leaderboard manipulation or cheating</td>
                         <td>Account reset + ban</td>
                     </tr>
+                    <tr>
+                        <td>Spamming friend requests or challenges</td>
+                        <td>Warning + temporary restriction</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- ═══ Reporting ════════════════════════════════════════════════ -->
         <section>
-            <h2>4. Reporting Violations</h2>
-            <p>If you see content that violates these guidelines — including a user's profile picture that appears to use a copyrighted celebrity image or brand logo — please report it immediately.</p>
+            <h2>6. Reporting Violations</h2>
+            <p>If you encounter a user whose profile picture or username violates these guidelines — including copyrighted celebrity images, brand logos, offensive content, or impersonation — please report it immediately.</p>
 
             <div class="info-box">
                 <p><strong>How to Report:</strong></p>
@@ -351,14 +478,14 @@
 
         <!-- ═══ Copyright Takedown ════════════════════════════════════════ -->
         <section>
-            <h2>5. Copyright Infringement — DMCA Takedown Requests</h2>
-            <p>If you are a copyright owner (or their authorized agent) and believe that a user's profile picture or other content on Arise infringes your copyright, you may submit a takedown notice to us.</p>
+            <h2>7. Copyright Infringement — DMCA Takedown Requests</h2>
+            <p>If you are a copyright owner (or their authorized agent) and believe that a user's profile picture on Arise infringes your copyright, you may submit a takedown notice to us.</p>
 
             <p>Your notice must include:</p>
             <ol>
                 <li>Your full name and contact information (email required).</li>
                 <li>A description of the copyrighted work you believe is being infringed.</li>
-                <li>Identification of the infringing material (e.g., username of the Arise account).</li>
+                <li>Identification of the infringing material (e.g., username of the Arise account using your copyrighted image as their profile picture).</li>
                 <li>A statement of good faith belief that the use is not authorized by the copyright owner, its agent, or the law.</li>
                 <li>A statement that the information in your notice is accurate and, under penalty of perjury, that you are the copyright owner or authorized to act on their behalf.</li>
                 <li>Your signature (electronic or physical).</li>
@@ -370,61 +497,69 @@
                 <p>Subject: "DMCA Takedown Notice — Arise App"</p>
             </div>
 
-            <p>We will process valid DMCA notices and remove infringing content within <strong>48–72 hours</strong> of receiving a complete and valid notice.</p>
-            <p>Users whose content is removed will be notified (where possible) and may submit a counter-notice if they believe the removal was in error.</p>
+            <p>We will process valid DMCA notices and remove infringing profile pictures within <strong>48–72 hours</strong> of receiving a complete and valid notice.</p>
+            <p>Users whose profile picture is removed will be notified (where possible) and may submit a counter-notice if they believe the removal was in error.</p>
         </section>
 
         <!-- ═══ Enforcement ══════════════════════════════════════════════ -->
         <section>
-            <h2>6. Enforcement and Appeals</h2>
+            <h2>8. Enforcement and Appeals</h2>
 
-            <h3>6.1 Our Approach</h3>
-            <p>We review reported content on a case-by-case basis. We consider context, severity, and history. Our goal is fair enforcement, not punitive action — but we will act decisively when necessary to protect the community.</p>
+            <h3>8.1 Our Approach</h3>
+            <p>We review reported profiles on a case-by-case basis. We consider context, severity, and history. Our goal is fair enforcement, not punitive action — but we will act decisively when necessary to protect the community.</p>
 
-            <h3>6.2 Actions We May Take</h3>
+            <h3>8.2 Actions We May Take</h3>
             <ul>
                 <li><strong>Warning:</strong> For minor first-time violations.</li>
-                <li><strong>Content Removal:</strong> Removing the offending content (e.g., profile picture).</li>
+                <li><strong>Content Removal:</strong> Removing the offending profile picture or resetting an offensive username.</li>
                 <li><strong>Temporary Suspension:</strong> Restricting account access for a set period.</li>
                 <li><strong>Permanent Termination:</strong> For severe or repeated violations.</li>
                 <li><strong>Legal Report:</strong> For content involving illegal activity, threats, or CSAM.</li>
             </ul>
 
-            <h3>6.3 Appeals</h3>
-            <p>If you believe your content was removed or your account was suspended in error, you may appeal by contacting us at <a href="mailto:roshan887407@gmail.com">roshan887407@gmail.com</a> with subject "Community Enforcement Appeal — Arise App". Include your username and a description of why you believe the action was in error.</p>
+            <h3>8.3 Appeals</h3>
+            <p>If you believe your profile picture was removed or your account was suspended in error, you may appeal by contacting us at <a href="mailto:roshan887407@gmail.com">roshan887407@gmail.com</a> with subject "Community Enforcement Appeal — Arise App". Include your username and a description of why you believe the action was in error.</p>
             <p>We will review all appeals within 7 business days.</p>
+        </section>
+
+        <!-- ═══ Age Suitability ═══════════════════════════════════════════ -->
+        <section>
+            <h2>9. Age Suitability</h2>
+            <p>Arise is designed to be suitable for <strong>all age groups</strong>. The app promotes self-development, discipline, and healthy habits — values that are beneficial for users of every age. The community features (leaderboard, friends, challenges) do not involve any form of open communication, content sharing, or social media interaction, making them inherently safe for younger users.</p>
+            <p>We encourage parents and guardians to explore the app alongside younger users to ensure it aligns with their family values.</p>
         </section>
 
         <!-- ═══ Platform Liability ════════════════════════════════════════ -->
         <section>
-            <h2>7. Platform Liability — User Responsibility</h2>
+            <h2>10. Platform Liability — User Responsibility</h2>
             <div class="info-box">
                 <p><strong>Arise operates as an intermediary platform</strong> under applicable laws (including Section 79 of India's IT Act, 2000). We are not the author of user-generated content. Users are solely responsible for the content they upload, including profile pictures and usernames.</p>
             </div>
             <ul>
-                <li>We do not pre-screen all user content before it is posted.</li>
+                <li>We do not pre-screen all user profile pictures before they are displayed.</li>
                 <li>We act promptly upon receiving valid reports or takedown notices.</li>
                 <li>Our safe harbor protection depends on us acting in good faith upon valid notices — which we commit to doing.</li>
-                <li>Users who upload infringing or harmful content bear personal legal responsibility for such content.</li>
+                <li>Users who upload infringing or harmful profile pictures bear personal legal responsibility for such content.</li>
             </ul>
         </section>
 
         <!-- ═══ Changes ══════════════════════════════════════════════════ -->
         <section>
-            <h2>8. Changes to These Guidelines</h2>
+            <h2>11. Changes to These Guidelines</h2>
             <p>We may update these Community Guidelines from time to time. Material changes will be communicated through an in-app notification and by updating the "Last Updated" date above. Your continued use of the Community features after changes constitutes your acceptance.</p>
         </section>
 
         <!-- ═══ Contact ══════════════════════════════════════════════════ -->
         <section>
-            <h2>9. Contact Us</h2>
+            <h2>12. Contact Us</h2>
             <div class="info-box">
                 <p><strong>Developer:</strong> Roshan Sharma</p>
                 <p><strong>Email:</strong> <a href="mailto:roshan887407@gmail.com">roshan887407@gmail.com</a></p>
-                <p><strong>App:</strong> Arise — Digital Discipline &amp; Growth</p>
+                <p><strong>App:</strong> Arise — A Self Development Ecosystem</p>
                 <p><strong>Platform:</strong> Google Play Store (Android)</p>
             </div>
             <p>
+                <a href="index.html">Home</a> &nbsp;|&nbsp;
                 <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
                 <a href="terms-of-service.html">Terms of Service</a> &nbsp;|&nbsp;
                 <a href="delete-account.html">Delete My Data</a>
@@ -432,8 +567,8 @@
         </section>
 
         <footer>
-            <p>© 2025–2026 Roshan Sharma. All rights reserved.</p>
-            <p>Arise — Digital Discipline &amp; Growth</p>
+            <p>&copy; 2025–2026 Roshan Sharma. All rights reserved.</p>
+            <p>Arise — A Self Development Ecosystem</p>
             <p style="margin-top: 12px;">These Community Guidelines help protect users, the developer, and the platform under India's IT Act 2000, international copyright law (DMCA), and Google Play Store policies.</p>
         </footer>
 
