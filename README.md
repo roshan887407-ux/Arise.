@@ -1,1 +1,1 @@
-# LifeLink-Website
+# Arise-An Self Improvement Ecosystem
