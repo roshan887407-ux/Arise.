@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — Arise</title>
+    <meta name="description" content="Terms of Service for Arise — Digital Discipline &amp; Growth Android application by Roshan Sharma.">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --surface: #111118;
+            --surface-alt: #16161f;
+            --border: #23233a;
+            --text: #e4e4ef;
+            --text-secondary: #8b8ba0;
+            --accent: #7c5cfc;
+            --accent-soft: rgba(124, 92, 252, 0.12);
+            --warning: #ffb347;
+            --success: #4ade80;
+            --danger: #f87171;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 780px; margin: 0 auto; padding: 40px 24px 80px; }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+        header .app-name { color: var(--accent); }
+        header .last-updated { font-size: 0.9rem; color: var(--text-secondary); }
+        header .effective-date { font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 16px;
+            font-size: 0.85rem;
+        }
+        .nav-links a { color: var(--accent); text-decoration: none; }
+        .nav-links a:hover { text-decoration: underline; }
+
+        .commitment-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 40px;
+        }
+        .commitment-card h2 { font-size: 1.2rem; margin-bottom: 20px; color: var(--accent); }
+        .commitment-point { display: flex; gap: 12px; margin-bottom: 16px; }
+        .commitment-point:last-child { margin-bottom: 0; }
+        .commitment-emoji { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+        .commitment-text strong { display: block; font-size: 0.95rem; margin-bottom: 2px; }
+        .commitment-text p { font-size: 0.88rem; color: var(--text-secondary); }
+
+        section { margin-bottom: 36px; }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h3 { font-size: 1.05rem; font-weight: 600; margin-top: 18px; margin-bottom: 8px; color: var(--accent); }
+
+        p { margin-bottom: 12px; color: var(--text-secondary); }
+
+        ul, ol { margin-bottom: 12px; padding-left: 20px; }
+        li { margin-bottom: 8px; color: var(--text-secondary); }
+        li strong { color: var(--text); }
+
+        .info-box {
+            background: var(--surface-alt);
+            border-left: 3px solid var(--accent);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .info-box p { margin-bottom: 4px; font-size: 0.9rem; }
+        .info-box p:last-child { margin-bottom: 0; }
+
+        .warning-box {
+            background: rgba(255, 179, 71, 0.06);
+            border-left: 3px solid var(--warning);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .warning-box p { margin-bottom: 4px; font-size: 0.9rem; }
+
+        .danger-box {
+            background: rgba(248, 113, 113, 0.06);
+            border-left: 3px solid var(--danger);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .danger-box p { margin-bottom: 4px; font-size: 0.9rem; }
+
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+        th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+        th { background: var(--surface); color: var(--text); font-weight: 600; }
+        td { color: var(--text-secondary); }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        footer p { color: var(--text-secondary); }
+
+        @media (max-width: 600px) {
+            .container { padding: 24px 16px 60px; }
+            header h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.1rem; }
+            table { font-size: 0.8rem; }
+            th, td { padding: 8px 10px; }
+            .nav-links { flex-direction: column; align-items: center; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Terms of Service — <span class="app-name">Arise</span></h1>
+            <p class="last-updated">Last Updated: June 17, 2026</p>
+            <p class="effective-date">Effective Date: June 17, 2026</p>
+            <div class="nav-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="community-guidelines.html">Community Guidelines</a>
+                <a href="delete-account.html">Delete My Data</a>
+            </div>
+        </header>
+
+        <!-- ═══ Commitment Card ═══════════════════════════════════════════ -->
+        <div class="commitment-card">
+            <h2>🔒 Our Commitment to You</h2>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">📱</span>
+                <div class="commitment-text">
+                    <strong>You own your data. Completely.</strong>
+                    <p>Everything you create in Arise — habits, tasks, journal entries, goals — belongs to you and only you. We have no claim over your personal content.</p>
+                </div>
+            </div>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">🚫</span>
+                <div class="commitment-text">
+                    <strong>We don't collect your data to profit from it.</strong>
+                    <p>We are not in the business of selling your information. We don't build ad profiles from your personal data. We don't share it with marketers. Period.</p>
+                </div>
+            </div>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">📵</span>
+                <div class="commitment-text">
+                    <strong>Protocol: fighting phone addiction, not enabling it.</strong>
+                    <p>Billion-dollar companies invest in keeping you on your screen. Protocol is the counter-force. All data it uses stays on your device — we never see it.</p>
+                </div>
+            </div>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">🤖</span>
+                <div class="commitment-text">
+                    <strong>AI coaching designed with privacy first.</strong>
+                    <p>Our AI assistant Aria uses secure cloud APIs. Your data is processed transiently, never saved externally, and you can control access at any time.</p>
+                </div>
+            </div>
+
+            <div class="commitment-point">
+                <span class="commitment-emoji">🗑️</span>
+                <div class="commitment-text">
+                    <strong>Delete everything, anytime.</strong>
+                    <p>Permanently delete your account and all associated data at any time from Settings. No waiting period, no retention games, no fine print.</p>
+                </div>
+            </div>
+        </div>
+
+        <p>These Terms of Service ("Terms") constitute a legally binding agreement between you and Roshan Sharma ("Developer", "we", "us", or "our") governing your use of the Arise mobile application ("App", "Service") available on the Google Play Store. By downloading, installing, or using the App, you confirm that you have read, understood, and agree to be bound by these Terms. If you do not agree, please uninstall the App immediately.</p>
+
+        <!-- ═══ 1. Acceptance ════════════════════════════════════════════ -->
+        <section>
+            <h2>1. Acceptance of Terms and Eligibility</h2>
+            <ul>
+                <li>By using the App, you confirm you are at least <strong>13 years of age</strong>.</li>
+                <li>If you are between 13 and 18 years old, you must have parental or guardian consent to use the App.</li>
+                <li>You confirm that you have the legal capacity to enter into a binding agreement in your jurisdiction.</li>
+                <li>If you are using the App on behalf of an organization, you represent that you have authority to bind that organization to these Terms.</li>
+            </ul>
+        </section>
+
+        <!-- ═══ 2. Description of Service ══════════════════════════════ -->
+        <section>
+            <h2>2. Description of Service</h2>
+            <p>Arise is a personal development application that provides:</p>
+            <ul>
+                <li><strong>Habit Tracking &amp; Streaks:</strong> Daily habit logging with XP/gamification rewards.</li>
+                <li><strong>Task &amp; Project Management:</strong> Organize tasks, projects, areas, and resources.</li>
+                <li><strong>Daily Journaling:</strong> Private journaling and reflection tools, stored locally.</li>
+                <li><strong>Digital Discipline (Protocol):</strong> Screen time awareness, focus sessions, and optional app discipline tools.</li>
+                <li><strong>AI Coaching (Aria):</strong> AI-powered personal coaching, available in local (on-device) and cloud modes.</li>
+                <li><strong>Community Features:</strong> Leaderboard, user profiles, and shared progress visibility.</li>
+                <li><strong>Gamification:</strong> XP system, levels, ranks, achievements, and in-app reward store.</li>
+                <li><strong>Widgets:</strong> Home screen widgets for quick task access.</li>
+            </ul>
+            <p>The App is provided "as is" and we reserve the right to modify, add, or remove features at any time without prior notice.</p>
+        </section>
+
+        <!-- ═══ 3. User Accounts ═════════════════════════════════════════ -->
+        <section>
+            <h2>3. User Accounts</h2>
+
+            <h3>3.1 Guest Mode vs. Registered Accounts</h3>
+            <p>You may use the App fully in <strong>Guest (Local) Mode</strong> without creating an account. All data remains on your device only. If you create an account, you enable cloud sync and community features.</p>
+
+            <h3>3.2 Account Responsibilities</h3>
+            <ul>
+                <li>You must provide accurate, current, and complete information when creating an account.</li>
+                <li>You are responsible for maintaining the confidentiality of your account credentials (password, etc.).</li>
+                <li>You are responsible for all activities that occur under your account.</li>
+                <li>You must immediately notify us at <a href="mailto:roshan887407@gmail.com">roshan887407@gmail.com</a> if you suspect unauthorized access to your account.</li>
+                <li>You may not create accounts for others without their express permission.</li>
+            </ul>
+
+            <h3>3.3 Account Suspension and Termination</h3>
+            <p>We reserve the right to suspend or permanently terminate accounts that violate these Terms, particularly the Acceptable Use Policy in Section 7, or that engage in fraudulent, abusive, or harmful behavior. We will endeavor to notify you before taking such action unless it would endanger safety, security, or violate legal obligations.</p>
+        </section>
+
+        <!-- ═══ 4. Your Data ══════════════════════════════════════════════ -->
+        <section>
+            <h2>4. Your Data — Full Ownership &amp; Control</h2>
+            <div class="info-box">
+                <p><strong>This is the most important section.</strong> All personal content you create (habits, tasks, journal entries, notes, goals) belongs exclusively to you. We make no claim of ownership over your personal data.</p>
+            </div>
+
+            <ul>
+                <li><strong>Local Mode:</strong> Your data stays exclusively on your device in Android's secure DataStore. Nothing is transmitted.</li>
+                <li><strong>Sync Mode:</strong> If you sign in, your data syncs to your personal private Firebase Firestore database and/or Google Drive App Data folder. Only you can access it — we cannot read your personal entries.</li>
+                <li><strong>Switch anytime:</strong> You can switch between local and sync mode at any time from Settings.</li>
+                <li><strong>Full deletion:</strong> You can delete all your data at any time. Account deletion removes your Google Drive backup, cloud database, Firebase account, and local data after you verify the same Google account.</li>
+            </ul>
+
+            <p>By using the App, you grant us a limited, non-exclusive, non-transferable license to store and process your content <em>solely for the purpose of providing the service to you</em>. This license ends immediately when you delete your data or account.</p>
+        </section>
+
+        <!-- ═══ 5. Community Features ════════════════════════════════════ -->
+        <section>
+            <h2>5. Community Features and User-Generated Content</h2>
+
+            <h3>5.1 What Is Publicly Visible</h3>
+            <p>If you participate in Community features, the following information is visible to other Arise users:</p>
+            <ul>
+                <li>Username</li>
+                <li>Profile picture (if you choose to set one)</li>
+                <li>Level, XP, and rank</li>
+            </ul>
+            <p>No other personal data (journal entries, tasks, habits, email address, focus sessions, or screen time) is shared with other users.</p>
+
+            <h3>5.2 Community Content License</h3>
+            <p>For content you share in Community features (username, profile picture, XP), you grant us a non-exclusive, royalty-free, worldwide license to display that content to other users of the App while you are a user.</p>
+
+            <h3>5.3 Profile Picture and Copyright</h3>
+            <div class="warning-box">
+                <p><strong>⚠️ Important — Profile Pictures:</strong> You are solely responsible for any profile picture (DP) you upload. By uploading a profile picture, you represent and warrant that:</p>
+                <p>• You own the copyright to the image, OR you have obtained a valid license or explicit permission from the copyright holder to use it, AND</p>
+                <p>• The image does not infringe any third party's intellectual property rights, privacy rights, or any other rights.</p>
+                <p>Uploading images of celebrities, actors, movie characters, brand logos, or other copyrighted material without authorization is <strong>strictly prohibited</strong> and may result in immediate account suspension and content removal.</p>
+            </div>
+
+            <h3>5.4 Content Moderation</h3>
+            <p>We reserve the right, but not the obligation, to review, moderate, or remove any user content (including profile pictures) that we determine, in our sole discretion, violates these Terms or our <a href="community-guidelines.html">Community Guidelines</a>. We are not responsible for any user-generated content posted by other users.</p>
+        </section>
+
+        <!-- ═══ 6. Protocol Feature ══════════════════════════════════════ -->
+        <section>
+            <h2>6. Protocol Feature — Permissions and Scope</h2>
+            <div class="info-box">
+                <p>Protocol exists for one reason: to help you reclaim your time from apps designed to steal it. The average person spends 4–7 hours per day on their phone — not by accident, but by design.</p>
+            </div>
+
+            <p>To function, Protocol requires sensitive Android permissions. Here is exactly what each one does — and critically, what it <em>never</em> does:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>What It Does</th>
+                        <th>What It NEVER Does</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Usage Access</strong></td>
+                        <td>Reads how much time you spend in each app. Shown only to you. Never uploaded.</td>
+                        <td>Never leaves your device. We cannot see it.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Notifications</strong></td>
+                        <td>Delivers focus session alerts and reminders you configure.</td>
+                        <td>Never used for unsolicited marketing.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>All Protocol permissions are <strong>opt-in</strong>. You can revoke any permission at any time through Android Settings. Revoking a permission only disables that specific Protocol feature — it does not affect the rest of the App.</p>
+
+            <p>Protocol data — screen time, focus sessions — is stored <strong>only on your device</strong>. It is never uploaded to any server, never analyzed by us, never shared with anyone.</p>
+        </section>
+
+        <!-- ═══ 7. Acceptable Use ════════════════════════════════════════ -->
+        <section>
+            <h2>7. Acceptable Use Policy</h2>
+            <p>By using the App, you agree <strong>NOT</strong> to:</p>
+            <ul>
+                <li>Use the App for any unlawful purpose or in violation of any applicable law or regulation.</li>
+                <li>Upload, post, or transmit any content that infringes any copyright, trademark, patent, trade secret, or other intellectual property or proprietary right.</li>
+                <li>Upload images, avatars, or profile pictures of celebrities, public figures, fictional characters, brand logos, or other copyrighted material without authorization from the rights holder.</li>
+                <li>Harass, abuse, intimidate, threaten, defame, or harm other users through Community features.</li>
+                <li>Post content that is discriminatory, hateful, racist, sexist, or offensive based on protected characteristics.</li>
+                <li>Post pornographic, sexually explicit, or violent content.</li>
+                <li>Impersonate any person, entity, or organization.</li>
+                <li>Attempt to gain unauthorized access to any part of the App, its servers, or infrastructure.</li>
+                <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App.</li>
+                <li>Upload or transmit viruses, malware, spyware, or any malicious code.</li>
+                <li>Use automated scripts, bots, or scrapers to access the App or manipulate leaderboard data.</li>
+                <li>Attempt to circumvent, disable, or interfere with security features of the App.</li>
+                <li>Misrepresent your identity, qualifications, or affiliation with any person or organization.</li>
+            </ul>
+
+            <p>Violation of this policy may result in immediate account suspension or termination, removal of content, and where appropriate, reporting to law enforcement.</p>
+        </section>
+
+        <!-- ═══ 8. AI Features ═══════════════════════════════════════════ -->
+        <section>
+            <h2>8. AI Features — Aria Disclaimer</h2>
+            <div class="warning-box">
+                <p><strong>⚠️ Important Disclaimer:</strong> Aria, our AI assistant, provides general personal development guidance only.</p>
+                <p>AI-generated content is NOT a substitute for professional medical, psychological, psychiatric, financial, legal, or other professional advice. Always consult qualified professionals for such needs.</p>
+            </div>
+            <ul>
+                <li>AI responses may not always be accurate, complete, or up to date.</li>
+                <li>Do not rely on Aria for medical diagnosis or treatment decisions.</li>
+                <li>Do not rely on Aria for financial, legal, or other critical decisions.</li>
+                <li>We are not liable for any actions taken based on AI-generated content.</li>
+            </ul>
+        </section>
+
+        <!-- ═══ 9. Intellectual Property ═════════════════════════════════ -->
+        <section>
+            <h2>9. Intellectual Property</h2>
+            <p>The App's design, code, graphics, branding, logos, and all other non-user content are owned by Roshan Sharma and protected by applicable intellectual property laws, including copyright and trademark law.</p>
+            <p>Your personal data and content are <strong>explicitly excluded</strong> — those belong to you.</p>
+            <p>You may not use, copy, reproduce, distribute, modify, or create derivative works of the App or its content without our express written permission.</p>
+        </section>
+
+        <!-- ═══ 10. DMCA / Copyright ══════════════════════════════════════ -->
+        <section>
+            <h2>10. Copyright Infringement — DMCA Notice &amp; Takedown</h2>
+            <p>We respect intellectual property rights. If you believe that content on the App infringes your copyright, please send a notice to us with the following information:</p>
+            <ol>
+                <li>Your name and contact information (email address).</li>
+                <li>Identification of the copyrighted work you claim has been infringed.</li>
+                <li>Identification of the material you claim is infringing (e.g., a specific user's profile picture) and enough information to locate it.</li>
+                <li>A statement that you have a good faith belief that the use is not authorized by the copyright owner, its agent, or the law.</li>
+                <li>A statement that the information in your notice is accurate and, under penalty of perjury, that you are the copyright owner or authorized to act on the owner's behalf.</li>
+                <li>Your electronic or physical signature.</li>
+            </ol>
+            <div class="info-box">
+                <p><strong>Send copyright notices to:</strong></p>
+                <p>Email: <a href="mailto:roshan887407@gmail.com">roshan887407@gmail.com</a></p>
+                <p>Subject line: "Copyright Infringement Notice — Arise App"</p>
+                <p>We will process valid DMCA notices and remove infringing content promptly, typically within 48–72 hours of receiving a valid notice.</p>
+            </div>
+            <p>Repeat infringers' accounts will be terminated.</p>
+        </section>
+
+        <!-- ═══ 11. Disclaimers ══════════════════════════════════════════ -->
+        <section>
+            <h2>11. Disclaimers and Limitation of Liability</h2>
+
+            <h3>11.1 No Warranties</h3>
+            <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR UNINTERRUPTED SERVICE.</p>
+            <p>We do not warrant that the App will be error-free, that defects will be corrected, or that the App is free of viruses or harmful components.</p>
+
+            <h3>11.2 Limitation of Liability</h3>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ROSHAN SHARMA SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF DATA, LOSS OF PROFITS, OR BUSINESS INTERRUPTION, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE APP, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+            <p>OUR TOTAL CUMULATIVE LIABILITY TO YOU FOR ANY CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR THE APP SHALL NOT EXCEED ₹500 (FIVE HUNDRED INDIAN RUPEES) OR THE AMOUNT YOU PAID US IN THE PAST 12 MONTHS, WHICHEVER IS GREATER.</p>
+
+            <h3>11.3 Indemnification</h3>
+            <p>You agree to indemnify, defend, and hold harmless Roshan Sharma and any affiliates from and against any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising out of or in any way connected with: (a) your access to or use of the App; (b) your violation of these Terms; (c) your violation of any third-party right, including copyright, privacy, or intellectual property rights; or (d) any content you upload or share through the App.</p>
+        </section>
+
+        <!-- ═══ 12. Governing Law ═════════════════════════════════════════ -->
+        <section>
+            <h2>12. Governing Law and Dispute Resolution</h2>
+            <p>These Terms are governed by the laws of India, without regard to conflict of law principles. Any disputes arising out of or in connection with these Terms shall first be attempted to be resolved through good-faith negotiation between the parties.</p>
+            <p>If negotiation fails, disputes shall be subject to the jurisdiction of the courts of India. Notwithstanding the foregoing, we reserve the right to seek injunctive relief in any court of competent jurisdiction.</p>
+        </section>
+
+        <!-- ═══ 13. Changes ══════════════════════════════════════════════ -->
+        <section>
+            <h2>13. Changes to These Terms</h2>
+            <p>We may update these Terms from time to time. When we make material changes, we will:</p>
+            <ul>
+                <li>Update the "Last Updated" date at the top of this page.</li>
+                <li>Notify you through an in-app notification before the changes take effect.</li>
+                <li>For significant changes, provide at least 7 days' notice before the changes become effective.</li>
+            </ul>
+            <p>Your continued use of the App after changes become effective constitutes your acceptance of the updated Terms. If you do not agree to the updated Terms, you must stop using the App and delete your account.</p>
+        </section>
+
+        <!-- ═══ 14. Termination ══════════════════════════════════════════ -->
+        <section>
+            <h2>14. Termination</h2>
+            <ul>
+                <li><strong>By you:</strong> You may terminate your account at any time through Settings → Account → Delete Account.</li>
+                <li><strong>By us:</strong> We may suspend or terminate your access immediately if you violate these Terms, particularly the Acceptable Use Policy.</li>
+                <li><strong>Effect of termination:</strong> Upon termination, your right to use the App ceases. We will delete your account data per our data retention policy (see our <a href="privacy-policy.html">Privacy Policy</a>).</li>
+            </ul>
+        </section>
+
+        <!-- ═══ 15. Miscellaneous ═════════════════════════════════════════ -->
+        <section>
+            <h2>15. Miscellaneous</h2>
+            <ul>
+                <li><strong>Entire Agreement:</strong> These Terms, together with our Privacy Policy and Community Guidelines, constitute the entire agreement between you and us regarding the App.</li>
+                <li><strong>Severability:</strong> If any provision of these Terms is found to be unenforceable, that provision will be modified to the minimum extent necessary, and the remaining provisions will continue in full force and effect.</li>
+                <li><strong>No Waiver:</strong> Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.</li>
+                <li><strong>Assignment:</strong> You may not assign your rights or obligations under these Terms without our prior written consent. We may assign our rights and obligations without restriction.</li>
+                <li><strong>Force Majeure:</strong> We shall not be liable for any failure or delay in performance due to circumstances beyond our reasonable control.</li>
+            </ul>
+        </section>
+
+        <!-- ═══ 16. Contact ══════════════════════════════════════════════ -->
+        <section>
+            <h2>16. Contact Us</h2>
+            <p>Questions about these Terms? Reach us at:</p>
+            <div class="info-box">
+                <p><strong>Developer:</strong> Roshan Sharma</p>
+                <p><strong>Email:</strong> <a href="mailto:roshan887407@gmail.com">roshan887407@gmail.com</a></p>
+                <p><strong>App:</strong> Arise — Digital Discipline &amp; Growth</p>
+                <p><strong>Platform:</strong> Google Play Store (Android)</p>
+            </div>
+            <p>We will acknowledge your message within 48 hours and respond substantively within 30 days.</p>
+            <p>
+                <a href="privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
+                <a href="community-guidelines.html">Community Guidelines</a> &nbsp;|&nbsp;
+                <a href="delete-account.html">Delete My Data</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>© 2025–2026 Roshan Sharma. All rights reserved.</p>
+            <p>Arise — Digital Discipline &amp; Growth</p>
+            <p style="margin-top: 12px;">These Terms of Service were created to comply with Google Play Store requirements and applicable laws including the IT Act 2000 (India), GDPR (EU), and CCPA (California).</p>
+        </footer>
+
+    </div>
+</body>
+</html>
